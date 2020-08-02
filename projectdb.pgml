@@ -1,0 +1,61 @@
+<project>
+    <documents>
+        <document url="abt.html">
+            <elements>
+                <element selector="html" desc="<nametag>html</nametag>" status="ok" name="HTML element">
+                    <action id="wp-template" wp-template wp-template-export-as="page-about.php" wp-template-master="index.html" name="Page settings"></action>
+                </element>
+            </elements>
+        </document>
+        <document url="blog.html">
+            <elements>
+                <element selector="html" desc="<nametag>html</nametag>" status="ok" name="HTML element">
+                    <action id="wp-template" wp-template wp-template-export-as="page-blog.php" wp-template-master="index.html" name="Page settings"></action>
+                </element>
+            </elements>
+        </document>
+        <document url="cont.html">
+            <elements>
+                <element selector="html" desc="<nametag>html</nametag>" status="ok" name="HTML element">
+                    <action id="wp-template" wp-template wp-template-export-as="{contact}.php" wp-template-master="index.html" wp-template-post-template-name="contact" name="Page settings"></action>
+                    <action id="cms-form" cms-form cms-form-send-email="true" name="Form - Smart"></action>
+                </element>
+            </elements>
+        </document>
+        <document url="footer.html">
+            <elements>
+                <element selector="html" desc="<nametag>html</nametag>" status="ok" name="HTML element">
+                    <action id="wp-template" wp-template wp-template-export-as="footer.php" name="Page settings"></action>
+                </element>
+            </elements>
+        </document>
+        <document url="header.html">
+            <elements>
+                <element selector="html" desc="<nametag>html</nametag>" status="ok" name="HTML element">
+                    <action id="wp-template" wp-template wp-template-export-as="header.php" name="Page settings"></action>
+                </element>
+            </elements>
+        </document>
+        <document url="index.html">
+            <elements>
+                <element selector="html" desc="<nametag>html</nametag>" status="ok" auto="true">
+                    <action id="wp-template" wp-template wp-template-export-as="index.php" wp-template-define-master-page="true" name="Page settings"></action>
+                </element>
+            </elements>
+        </document>
+        <document url="serv.html">
+            <elements>
+                <element selector="html" desc="<nametag>html</nametag>" status="ok" name="HTML element">
+                    <action id="wp-template" wp-template wp-template-export-as="service.php" wp-template-master="index.html" name="Page settings"></action>
+                </element>
+            </elements>
+        </document>
+        <document url="servicebox.html">
+            <elements>
+                <element selector="html" desc="<nametag>html</nametag>" status="ok" name="HTML element">
+                    <action id="wp-template" wp-template wp-template-export-as="{servbox}.php" name="Page settings"></action>
+                </element>
+            </elements>
+        </document>
+    </documents>
+</project>

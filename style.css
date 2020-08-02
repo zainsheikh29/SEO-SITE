@@ -1,0 +1,145 @@
+body {
+    font-family: 'Cairo', sans-serif;
+     }
+ 
+
+.center {
+  text-align: center;
+}
+
+section {
+  height: 15vh;
+  margin: auto;
+  
+}
+
+/* NAVIGATION */
+nav {
+  width: 80%;
+  margin: 0 auto;
+  background: transparent;
+  padding: 50px 0;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+
+
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 1200px) {
+  .center {
+    width: 33.5%;
+  }
+
+  .nav {
+    width: 44%;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav ul {
+    padding: 90px 80px 88px 90px;
+  }
+
+  .nav ul li {
+    width: 35%;
+  }
+
+  .cnav ul li a {
+    width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .center {
+    padding: 90px 80px 88px 90px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav ul {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav ul li {
+    padding: 90px 15px 88px 15px;
+  }
+}
+
+
+    hr.new1{
+    height: 8px;
+    width: 20%;
+    text-align: left;
+    margin-left: 49px;  
+    background-image: linear-gradient(90deg, red, transparent);
+    
+    border: 0;
+    height: 1px;
+    }
+    
+    hr.new2{
+    height: 8px;
+    width: 20%;
+    text-align: left;
+    margin-left: 0;  
+    background-image: linear-gradient(90deg, red, transparent);
+    
+    border: 0;
+    height: 1px;
+    }
+
+/*------------------------------------------------------------------
+
